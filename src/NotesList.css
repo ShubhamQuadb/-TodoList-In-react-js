@@ -1,0 +1,101 @@
+.icon {
+    width: 1 em;
+    cursor: pointer;
+    filter: brightness(75%); /* light gray */
+    transition: filter 0.3s;
+  }
+  
+  .edit-icon:hover {
+    filter: invert(30%) sepia(97%) saturate(2275%) hue-rotate(186deg) brightness(93%) contrast(108%); /* blue */
+  }
+  
+  .delete-icon:hover {
+    filter: invert(15%) sepia(88%) saturate(7471%) hue-rotate(355deg) brightness(93%) contrast(108%); /* dark red */
+  }
+  /* NotesList.css */
+
+/* Styling for the empty state container */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+/* Styling for the empty state image */
+.empty-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem; /* Adjust spacing as needed */
+}
+
+/* Styling for the empty state text */
+.empty-text {
+  font-size: 1.5rem;
+  color: #666; /* Adjust color as needed */
+}
+
+/* Styling for the list of notes */
+.notes-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styling for each note item */
+.notes-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee; /* Adjust border color as needed */
+}
+
+/* Styling for the note text */
+.notes-list li .flex-grow {
+  flex-grow: 1;
+  word-wrap: break-word; /* Ensure long text wraps properly */
+}
+
+/* Styling for completed note text */
+.notes-list li .line-through {
+  text-decoration: line-through;
+  color: #999; /* Adjust color as needed */
+}
+
+/* Styling for the icons container */
+.notes-list li .icon {
+  width: 0.5em;
+  cursor: pointer;
+}
+
+/* Styling for the edit icon */
+.notes-list li .edit-icon {
+  margin: 1px;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Styling for the delete icon */
+.notes-list li .delete-icon {
+  width: 0.7em; /* Reduce the width for smaller size */
+  margin: 0;
+  padding: 0; /* Adjust padding as needed */
+}
+
+/* Space between list items */
+.space-y-2 > * + * {
+  margin-top: 0.5rem; /* Adjust spacing as needed */
+}
+
+/* Space between flex items */
+.space-x-2 > * + * {
+  margin-left: 0.5rem; /* Adjust spacing as needed */
+}
+
+/* Space between icons */
+.space-x-1 > * + * {
+  margin-left: 0.25rem; /* Adjust spacing as needed */
+}
+
+  

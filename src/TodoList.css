@@ -1,0 +1,39 @@
+/* Define root variables for colors */
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray-800: #2d3748;
+    --color-gray-300: #d1d5db;
+    --margin-bottom-2: 0.5rem;
+    --margin-right-2: 0.5rem;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dark mode background and text color */
+  .dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  
+  /* Text colors */
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  
+  .dark .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+  
+  /* Margin and spacing */
+  .mb-2 {
+    margin-bottom: var(--margin-bottom-2);
+  }
+  
+  .mr-2 {
+    margin-right: var(--margin-right-2);
+  }
+  
